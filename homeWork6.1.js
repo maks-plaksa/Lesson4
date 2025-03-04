@@ -1,6 +1,6 @@
 function checkProbabilityTheory(){
     
-    let countMain = Math.floor(Math.random() * 5 )* 2 + 10; // определяем случайное целое количество будущих генераций
+    let countMain = Math.floor(Math.random() * 5 )* 20 + 100; // определяем случайное целое количество будущих генераций
 
     return function generateData(){
                 
@@ -18,7 +18,7 @@ function checkProbabilityTheory(){
 
                     total++;
                     
-                    if ((temp / 2) == Math.ceil(temp / 2)){
+                    if (temp % 2 == 0){
                         even++;
                     }
                     else{
