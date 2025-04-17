@@ -7,7 +7,7 @@ var arr = [
     {
         userName:"Dmitro",
         lastName:"Porohov",
-        email:"dmitro.porohov@yahoo.com"
+        email:"porohov@yahoo.com"
     },
     {
         userName:"Andrii",
@@ -17,7 +17,8 @@ var arr = [
 ];
 
 // const pattern = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-zA-Z]{2,}$/; // регулярний вираз для перевірки email
-const pattern = /^[a-z0-9]+\.?([a-z0-9]+)?@(gmail.com)|(yahoo.com)$/;
+//const pattern = /^[a-z0-9]+\.?([a-z0-9]+)?@(gmail\.com)|(yahoo\.com)$/;
+const pattern = /^[a-z0-9]+\.?[a-z0-9]+@(gmail\.com|yahoo\.com)$/;
 
 let validEmails = [];
 
